@@ -12,6 +12,7 @@ const EmployeeComponent = () => {
         email: ''
     })
     const {id} = useParams();
+    
     const navigator = useNavigate();
 
     function saveEmployee(e){
