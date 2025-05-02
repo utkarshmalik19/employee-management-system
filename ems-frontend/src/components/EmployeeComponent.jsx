@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { createEmployee } from '../services/EmployeeService'
 import { useNavigate, useParams } from 'react-router-dom'
 
@@ -12,8 +12,11 @@ const EmployeeComponent = () => {
         email: ''
     })
     const {id} = useParams();
-    
+
     const navigator = useNavigate();
+    useEffect(() => {
+
+    },[id])
 
     function saveEmployee(e){
         e.preventDefault();
