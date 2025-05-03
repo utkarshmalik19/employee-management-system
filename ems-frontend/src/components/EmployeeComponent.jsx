@@ -13,9 +13,12 @@ const EmployeeComponent = () => {
     })
     const {id} = useParams();
 
+
     const navigator = useNavigate();
     useEffect(() => {
-
+        if(id){
+            
+        }
     },[id])
 
     function saveEmployee(e){
